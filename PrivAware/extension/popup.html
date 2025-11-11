@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🔒 PrivAware</title>
+  <style>
+    body {
+      width: 300px;
+      font-family: "Orbitron", Arial, sans-serif;
+      background: radial-gradient(circle at top, #0a0a0a, #000);
+      color: #00ff9f;
+      text-align: center;
+      padding: 20px;
+      border: 2px solid #00e0ff;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #00e0ff88;
+    }
+
+    #risk {
+      font-weight: bold;
+      font-size: 22px;
+      margin-bottom: 10px;
+      text-shadow: 0 0 8px #00ffcc;
+      min-height: 28px;
+    }
+    .safe {
+      color: #00ff99;
+      text-shadow: 0 0 10px #00ff99;
+    }
+    .moderate {
+      color: #ffe066;
+      text-shadow: 0 0 10px #ffe066;
+    }
+    .risky {
+      color: #ff4b4b;
+      text-shadow: 0 0 10px #ff4b4b;
+    }
+
+    #scanBtn {
+      padding: 10px 20px;
+      background: linear-gradient(135deg, #00ffcc, #0066ff);
+      color: black;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s ease;
+      box-shadow: 0 0 10px #00ffccaa;
+    }
+
+    #scanBtn:hover {
+      background: linear-gradient(135deg, #00e0ff, #00ff99);
+      color: #000;
+      box-shadow: 0 0 20px #00ffcc;
+      transform: scale(1.05);
+    }
+
+    #openReport {
+      display: none;
+      margin-top: 15px;
+      color: #00e0ff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+      text-shadow: 0 0 5px #00e0ff;
+    }
+
+    #openReport:hover {
+      color: #00ffcc;
+      text-shadow: 0 0 15px #00ffcc;
+    }
+
+    footer {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #00e0ff99;
+      text-shadow: 0 0 4px #00e0ff66;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="risk">🔍 Press Scan to Analyze Website</div>
+  <button id="scanBtn">🧠 Scan Website</button>
+  <br><br>
+  <a id="openReport" href="#" target="_blank">📊 Open Detailed Report</a>
+  <footer>🛡️ Be safe from threats</footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>
