@@ -33,7 +33,7 @@ You can run PrivAware locally in two ways: **native Python** (recommended for de
    cd Backend
    uvicorn app:app --reload --port 8000
    ```
-3. **Go to chrome click extension-  manage extension
+3. Go to chrome click extension-  manage extension
 4. click developer mode and clcicl load unpacked
 5. choose privaware and click extension
 6. open any website and open the extension , it sows report correctly this readme file formationg is not frmal make it formal**
